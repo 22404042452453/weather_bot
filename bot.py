@@ -8,7 +8,7 @@ bot = telebot.TeleBot(token1)
 # commands of bot
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
-	bot.send_message(message.chat.id, "Здравствуй,Валерия\n"
+	bot.send_message(message.chat.id, "Здравствуй,пользователь\n"
 									  "Введите название своего города :")
 
 @bot.message_handler(commands=['help'])
